@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Pessoa {
+    
+    int32 idade = 1;
+    string primeiro_nome = 2;
+    string segundo_nome = 3;
+    bytes foto_perfil = 4;
+    bool perfil_verificado = 5;
+    float altura = 6;
+
+}
