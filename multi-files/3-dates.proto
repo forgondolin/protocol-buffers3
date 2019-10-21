@@ -1,0 +1,8 @@
+syntax = "proto3"; 
+
+message Data
+{
+ int32 ano = 1;
+ int32 mes = 2;
+ int32 dia = 3;   
+}
