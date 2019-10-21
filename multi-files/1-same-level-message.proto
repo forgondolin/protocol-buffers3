@@ -1,0 +1,43 @@
+//sintaxe do proto3
+syntax = "proto3";
+
+
+
+message Pessoa {
+    
+    int32 idade = 1;
+
+    string primeiro_nome = 2;
+
+    string segundo_nome = 3;
+
+    //foto em .jpg
+    bytes foto_perfil = 4;
+
+    bool perfil_verificado = 5;
+    
+    float altura = 6;
+
+    repeated string telefones = 7;
+
+    //considerando 3 cores de olhos básicas
+    enum Cor_iris {
+            UNKNOW_EYE_COLOR = 0;
+            VERDE = 1;
+            MARROM = 2;
+            AZUL = 3;
+    }
+
+    Cor_iris cor_do_olho = 8;
+
+    //aniversário 
+    Data aniversario =9;
+
+}
+
+message Data
+{
+ int32 ano = 1;
+ int32 mes = 2;
+ int32 dia = 3;   
+}
