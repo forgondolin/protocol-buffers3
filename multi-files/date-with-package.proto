@@ -1,0 +1,10 @@
+syntax = "proto3"; 
+
+package my.date;
+
+message Data
+{
+ int32 ano = 1;
+ int32 mes = 2;
+ int32 dia = 3;   
+}

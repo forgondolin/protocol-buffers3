@@ -1,6 +1,7 @@
 syntax = "proto3";
-import "multi-files/3-dates.proto";
+import "multi-files/date-with-package.proto";
 
+package person; 
 
 message Pessoa {
     
@@ -30,7 +31,7 @@ message Pessoa {
     Cor_iris cor_do_olho = 8;
 
     //aniversário 
-    Data aniversario =9;
+    my.date.Data aniversario =9;
 
     message Endereco
     {
